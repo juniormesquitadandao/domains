@@ -1,13 +1,5 @@
 # Domains
 Find available domains with Linux + Whois + Ruby
-
-```rb
-# control.rb
-
-require 'daemons'
-Daemons.run 'script.rb'
-```
-
 ```rb
 # script.rb
 
@@ -42,7 +34,12 @@ while current <= last
   current += 1
 end
 ```
+```rb
+# control.rb
 
+require 'daemons'
+Daemons.run 'script.rb'
+```
 ```sh
 ruby control.rb start
 ```
