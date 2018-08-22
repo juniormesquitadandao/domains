@@ -6,7 +6,7 @@ Find available domains with Linux + Whois + Ruby
 name_size = 5
 tld = '.com'
 
-chars = ('0'..'9').to_a + ('a'..'z').to_a
+chars = ['-'] + ('0'..'9').to_a + ('a'..'z').to_a
 first = chars.size ** (name_size - 1)
 last = (chars.size ** name_size) - 1
 
