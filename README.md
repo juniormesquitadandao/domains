@@ -1,14 +1,16 @@
 # Domains
 Find available domains with Linux + Whois + Ruby
 
-control.rb
 ```rb
+# control.rb
+
 require 'daemons'
 Daemons.run 'script.rb'
 ```
 
-script.rb
 ```rb
+# script.rb
+
 name_size = 5
 tld = '.com'
 
@@ -40,5 +42,8 @@ while current <= last
   current += 1
 end
 ```
+
+```sh
 ruby control.rb start
+```
 
