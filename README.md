@@ -15,7 +15,7 @@ while current <= last
   sum = current
 
   mods = []
-  5.times do
+  name_size.times do
     mods << sum % chars.size
     sum = sum / chars.size
   end
