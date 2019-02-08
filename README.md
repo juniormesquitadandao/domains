@@ -7,10 +7,9 @@ name_size = 5
 tld = '.com'
 
 chars = ['-'] + ('0'..'9').to_a + ('a'..'z').to_a
-first = chars.size ** (name_size - 1)
 last = (chars.size ** name_size) - 1
 
-current = first
+current = 0
 while current <= last
   sum = current
 
