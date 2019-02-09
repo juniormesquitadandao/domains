@@ -24,7 +24,7 @@ while current <= last
   end.join
 
   whois = p `whois -H #{name}#{tld}`
-  if whois =~ /No match for/
+  if whois.encode('UTF-8', 'binary', invalid: :replace, undef: :replace, replace: '') =~ /No match for/
     open('domains.txt', 'a') { |f|
       f.puts name
     }
