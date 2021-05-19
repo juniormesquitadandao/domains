@@ -1,5 +1,3 @@
-im-launch
-sh -c 'if [ "x$XDG_SESSION_TYPE" = "xwayland" ] ; then exec env IM_CONFIG_CHECK_ENV=1 im-launch true; fi'
 *.gem
 *.rbc
 /.config
